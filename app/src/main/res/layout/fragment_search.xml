@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Aurora Store
+  ~ Copyright (C) 2018  Rahul Kumar Patel <whyorean@gmail.com>
+  ~
+  ~ Yalp Store
+  ~ Copyright (C) 2018 Sergey Yeriomin <yeriomin@gmail.com>
+  ~
+  ~ Aurora Store (a fork of Yalp Store )is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 2 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Aurora Store is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Aurora Store.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/search_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="12dp"
+            android:fontFamily="@font/google_sans_bold"
+            android:text="@string/action_search_title"
+            android:textAlignment="viewStart"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="16sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_title"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="1dp">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search_apps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="locale"
+                app:closeIcon="@null"
+                app:queryBackground="@android:color/transparent"
+                app:queryHint="@string/action_search_title"
+                app:searchIcon="@drawable/ic_search" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.dragons.custom.ClusterAppsCard
+            android:id="@+id/searchClusterApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_layout"
+            android:layout_margin="4dp" />
+
+        <LinearLayout
+            android:id="@+id/history_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/searchClusterApp"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:fontFamily="@font/google_sans_bold"
+                android:text="@string/action_search_history"
+                android:textAlignment="viewStart"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/clearAll"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/action_search_clearHistory"
+                android:textAllCaps="false"
+                android:textColor="?android:attr/textColorSecondary" />
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/searchCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/history_layout"
+            android:layout_margin="8dp"
+            android:animateLayoutChanges="true"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="1dp"
+            app:cardPreventCornerOverlap="false">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/searchHistory"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/emptyView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/list_empty_query"
+                android:textColor="?attr/colorAccent"
+                android:textSize="18sp" />
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

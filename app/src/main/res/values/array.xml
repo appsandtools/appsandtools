@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Aurora Store
+  ~ Copyright (C) 2018  Rahul Kumar Patel <whyorean@gmail.com>
+  ~
+  ~ Yalp Store
+  ~ Copyright (C) 2018 Sergey Yeriomin <yeriomin@gmail.com>
+  ~
+  ~ Aurora Store (a fork of Yalp Store )is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 2 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Aurora Store is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Aurora Store.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+    <string-array name="blackOrWhiteValues" translatable="false">
+        <item>BLACK</item>
+        <item>WHITE</item>
+    </string-array>
+    <string-array name="blackOrWhiteLabels">
+        <item>@string/pref_update_list_white_or_black_black</item>
+        <item>@string/pref_update_list_white_or_black_white</item>
+    </string-array>
+    <string-array name="updateIntervalValues" translatable="false">
+        <item>-1</item>
+        <item>3600000</item>
+        <item>86400000</item>
+        <item>604800000</item>
+    </string-array>
+    <string-array name="updateIntervalLabels">
+        <item>@string/pref_background_update_interval_manually</item>
+        <item>@string/pref_background_update_interval_hourly</item>
+        <item>@string/pref_background_update_interval_daily</item>
+        <item>@string/pref_background_update_interval_weekly</item>
+    </string-array>
+    <string-array name="installationMethodValues" translatable="false">
+        <item>DEFAULT</item>
+        <item>ROOT</item>
+        <item>PRIVILEGED</item>
+        <item>AURORA</item>
+    </string-array>
+    <string-array name="installationMethodLabels">
+        <item>@string/pref_installation_method_default</item>
+        <item>@string/pref_installation_method_root</item>
+        <item>@string/pref_installation_method_privileged</item>
+        <item>@string/pref_installation_method_aurora</item>
+    </string-array>
+    <string-array name="filterRatingValues" translatable="false">
+        <item>0</item>
+        <item>1.0</item>
+        <item>2.0</item>
+        <item>3.0</item>
+        <item>4.0</item>
+        <item>4.5</item>
+        <item>4.7</item>
+    </string-array>
+    <string-array name="filterRatingLabels" translatable="false">
+        <item>@string/action_filter_all</item>
+        <item> 1 + </item>
+        <item> 2 + </item>
+        <item> 3 + </item>
+        <item> 4 + </item>
+        <item> 4.5 + </item>
+        <item> 4.7 + </item>
+    </string-array>
+    <string-array name="filterDownloadsValues" translatable="false">
+        <item>0</item>
+        <item>100</item>
+        <item>1000</item>
+        <item>10000</item>
+        <item>50000</item>
+        <item>100000</item>
+        <item>1000000</item>
+        <item>10000000</item>
+        <item>50000000</item>
+        <item>100000000</item>
+    </string-array>
+    <string-array name="filterDownloadsLabels" translatable="false">
+        <item>@string/action_filter_all</item>
+        <item> > 100 </item>
+        <item> > 1 K </item>
+        <item> > 10 K </item>
+        <item> > 50 K </item>
+        <item> > 100 K </item>
+        <item> > 1 M </item>
+        <item> > 10 M </item>
+        <item> > 50 M </item>
+        <item> > 100 M </item>
+    </string-array>
+    <string-array name="topCategories">
+        <item>PHOTOGRAPHY</item>
+        <item>MUSIC_AND_AUDIO</item>
+        <item>ENTERTAINMENT</item>
+        <item>SHOPPING</item>
+        <item>PERSONALIZATION</item>
+        <item>SOCIAL</item>
+        <item>COMMUNICATION</item>
+    </string-array>
+    <string-array name="THEMES_LABELS">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>Black</item>
+    </string-array>
+    <string-array name="THEMES_VALUES">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>Black</item>
+    </string-array>
+    <string-array name="linkURLS">
+        <item>"https://paypal.me/whyorean"</item>
+        <item>"https://gitlab.com/AuroraOSS/AuroraStore"</item>
+        <item>"https://forum.xda-developers.com/android/apps-games/galaxy-playstore-alternative-t3739733"</item>
+        <item>"https://t.me/AuroraSupport"</item>
+        <item>"https://f-droid.org/en/packages/com.dragons.aurora/"</item>
+    </string-array>
+    <string-array name="linkTitles">
+        <item>Paypal</item>
+        <item>@string/about_gitlab</item>
+        <item>@string/about_xda</item>
+        <item>@string/about_telegram</item>
+        <item>@string/about_fdroid</item>
+    </string-array>
+    <string-array name="linkSummary">
+        <item>Donate me on Paypal</item>
+        <item>@string/about_gitlab_summary</item>
+        <item>@string/about_xda_summary</item>
+        <item>@string/about_telegram_summary</item>
+        <item>@string/about_fdroid_summary</item>
+    </string-array>
+    <string-array name="SUBCATEGORY_LABEL">
+        <item>@string/pref_app_subcategory_free</item>
+        <item>@string/pref_app_subcategory_grossing</item>
+        <item>@string/pref_app_subcategory_trending</item>
+    </string-array>
+    <string-array name="SUBCATEGORY_VALUE">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="database_validity_labels">
+        <item>7 Days</item>
+        <item>3 Days</item>
+        <item>1 Day</item>
+        <item>12 Hours</item>
+        <item>6 Hours</item>
+        <item>3 Hours</item>
+    </string-array>
+    <string-array name="database_validity_values">
+        <item>168</item>
+        <item>72</item>
+        <item>24</item>
+        <item>12</item>
+        <item>6</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="geoLocation">
+        <item>Default</item>
+        <item>Canberra, Australia</item>
+        <item>Brussels, Belgium</item>
+        <item>Brasilia, Brazil</item>
+        <item>Ottawa, Canada</item>
+        <item>Beijing, China</item>
+        <item>Copenhagen, Denmark</item>
+        <item>Helsinki, Finland</item>
+        <item>Paris, France</item>
+        <item>Germany, Berlin</item>
+        <item>Athens, Greece</item>
+        <item>New Delhi, India</item>
+        <item>Rome, Italy</item>
+        <item>Kuala Lumpur, Malaysia</item>
+        <item>Mexico, Mexico</item>
+        <item>Lisbon, Portugal</item>
+        <item>Seoul, Republic of Korea</item>
+        <item>Riyadh, Saudi Arabia</item>
+        <item>Madrid, Spain</item>
+        <item>Stockholm, Sweden</item>
+        <item>Bern, Switzerland</item>
+        <item>Ankara, Turkey</item>
+        <item>Kiev, Ukraine</item>
+        <item>Abu Dhabi, UAE</item>
+        <item>London, UK</item>
+        <item>Washington DC, USA</item>
+        <item>Hanoi, Viet Nam</item>
+    </string-array>
+    <integer-array name="tab_colors">
+        <item>@color/colorAccent</item>
+        <item>@color/colorRed</item>
+        <item>@color/colorOrange</item>
+        <item>@color/colorGreen</item>
+        <item>@color/colorCyan</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,35 @@
+<!--
+  ~ Aurora Store
+  ~ Copyright (C) 2018  Rahul Kumar Patel <whyorean@gmail.com>
+  ~
+  ~ Yalp Store
+  ~ Copyright (C) 2018 Sergey Yeriomin <yeriomin@gmail.com>
+  ~
+  ~ Aurora Store (a fork of Yalp Store )is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 2 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Aurora Store is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Aurora Store.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+    <string name="app_name" translatable="false">Aurora Store</string>
+    <string name="expansion_file_main" translatable="false">"%1$s - Main expansion"</string>
+    <string name="expansion_file_patch" translatable="false">"%1$s - Secondary expansion"</string>
+    <string name="two_items" translatable="false">"%1$s %2$s"</string>
+    <string name="content_description_review_author_avatar" translatable="false">"Review author avatar"</string>
+    <string name="content_description_review_edit" translatable="false">"Edit your review"</string>
+    <string name="content_description_review_delete" translatable="false">"Delete your review"</string>
+    <string name="content_description_review_previous_page" translatable="false">"Previous review page"</string>
+    <string name="content_description_review_next_page" translatable="false">"Next review page"</string>
+    <string name="content_description_app_icon" translatable="false">"App icon"</string>
+    <string name="details_rating" translatable="false">"%1$.1f"</string>
+    <string name="details_rating_specific" translatable="false">"%1$d  ★  %2$d"</string>
+</resources>

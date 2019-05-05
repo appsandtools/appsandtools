@@ -1,0 +1,30 @@
+<!--
+  ~ Aurora Store
+  ~ Copyright (C) 2018  Rahul Kumar Patel <whyorean@gmail.com>
+  ~
+  ~ Yalp Store
+  ~ Copyright (C) 2018 Sergey Yeriomin <yeriomin@gmail.com>
+  ~
+  ~ Aurora Store (a fork of Yalp Store )is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 2 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Aurora Store is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Aurora Store.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportHeight="24.0"
+    android:viewportWidth="24.0">
+    <path
+        android:fillColor="?android:attr/colorForeground"
+        android:pathData="M12,0A12,12 0,0 1,24 12A12,12 0,0 1,12 24A12,12 0,0 1,0 12A12,12 0,0 1,12 0M12,2A10,10 0,0 0,2 12C2,14.4 2.85,16.6 4.26,18.33L18.33,4.26C16.6,2.85 14.4,2 12,2M12,22A10,10 0,0 0,22 12C22,9.6 21.15,7.4 19.74,5.67L5.67,19.74C7.4,21.15 9.6,22 12,22Z" />
+</vector>

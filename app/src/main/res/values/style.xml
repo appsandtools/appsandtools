@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Aurora Store
+  ~ Copyright (C) 2018  Rahul Kumar Patel <whyorean@gmail.com>
+  ~
+  ~ Yalp Store
+  ~ Copyright (C) 2018 Sergey Yeriomin <yeriomin@gmail.com>
+  ~
+  ~ Aurora Store (a fork of Yalp Store )is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 2 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Aurora Store is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Aurora Store.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">?colorPrimary</item>
+        <item name="android:panelBackground">@color/white</item>
+        <item name="android:strokeColor">@color/strokeLight</item>
+        <item name="android:statusBarColor">?colorPrimaryDark</item>
+        <item name="android:preferenceStyle">@style/Preference.Aurora</item>
+        <item name="android:toolbarStyle">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="chipStyle">@style/Widget.Aurora.FilterChip</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">#343434</item>
+        <item name="colorPrimaryDark">#242424</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:strokeColor">@color/strokeDark</item>
+        <item name="android:panelBackground">#343434</item>
+        <item name="android:preferenceStyle">@style/Preference.Aurora</item>
+        <item name="android:toolbarStyle">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="chipStyle">@style/Widget.Aurora.FilterChip</item>
+    </style>
+
+    <style name="AppTheme.Black" parent="AppTheme.Dark">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="android:colorBackground">@color/black</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:strokeColor">@color/strokeBlack</item>
+        <item name="android:panelBackground">@color/black</item>
+        <item name="materialCardViewStyle">@style/Widget.Aurora.Card.Black</item>
+        <item name="android:tabWidgetStyle">@style/Widget.MaterialComponents.TabLayout.Colored
+        </item>
+    </style>
+
+    <style name="Preference.Aurora.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Preference.Aurora.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">#343434</item>
+        <item name="colorPrimaryDark">#242424</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Preference.Aurora.Black" parent="Preference.Aurora.Dark">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="android:colorBackground">@color/black</item>
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <!-- RatingBar Style -->
+
+    <style name="RatingBar" parent="Theme.MaterialComponents">
+        <item name="colorControlNormal">@color/lightGray</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+
+    <style name="RatingBar2" parent="Theme.MaterialComponents">
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/darkGray</item>
+    </style>
+
+    <style name="RatingBarReviews" parent="Theme.MaterialComponents">
+        <item name="colorControlNormal">@color/colorGold</item>
+        <item name="colorControlActivated">@color/colorGold</item>
+    </style>
+
+    <style name="Widget.Aurora" parent="@android:style/Widget" />
+
+    <!-- TextView Styles -->
+    <style name="TextAppearance.Aurora.CollapsingToolbar" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:letterSpacing">0.050</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Toolbar" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:letterSpacing">0.050</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Tab" parent="@style/TextAppearance.MaterialComponents.Tab">
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:textColor">@color/tab_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.DialogTitle" parent="@style/TextAppearance.AppCompat.Title">
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Title" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:fontFamily">@font/google_sans_bold</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:letterSpacing">0.075</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.SubTitle" parent="TextAppearance.Aurora.Title">
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.SubTitle.Compact" parent="TextAppearance.Aurora.SubTitle">
+        <item name="android:letterSpacing">0.015</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.ChipText" parent="TextAppearance.Aurora.Title">
+        <item name="android:letterSpacing">0.015</item>
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.Body" parent="@style/TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.TextView" parent="@android:style/Widget.Material.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.Aurora.Body</item>
+        <item name="android:lineSpacingMultiplier">@dimen/text_line_spacing</item>
+    </style>
+
+    <style name="TextAppearance.Aurora.DialogContent" parent="@style/TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <!-- Toolbar & AppBar -->
+    <style name="AppTheme.PopupTheme" parent="ThemeOverlay.MaterialComponents" />
+
+    <style name="Widget.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="titleTextAppearance">@style/TextAppearance.Aurora.Toolbar</item>
+        <item name="popupTheme">@style/AppTheme.PopupTheme</item>
+    </style>
+
+    <style name="Widget.AppBar" parent="@style/Widget.Design.AppBarLayout">
+        <item name="popupTheme">@style/AppTheme.PopupTheme</item>
+        <item name="android:background">?android:colorBackground</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Radio Button -->
+    <style name="Widget.Aurora.CheckedTextView" parent="@style/ThemeOverlay.MaterialComponents">
+        <item name="colorControlNormal">?colorPrimary</item>
+        <item name="colorControlActivated">?colorAccent</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:fontFamily">@font/google_sans</item>
+    </style>
+
+    <!-- Dialog -->
+    <style name="Preference.Aurora" parent="PreferenceThemeOverlay">
+        <item name="android:scrollbars">vertical</item>
+        <item name="dialogPreferenceStyle">@style/ThemeOverlay.MaterialComponents.Dialog</item>
+    </style>
+
+    <style name="Theme.Aurora.Dialog" parent="@style/Theme.MaterialComponents.Light.Dialog">
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:textViewStyle">@style/TextAppearance.Aurora.TextView</item>
+    </style>
+
+    <style name="Theme.Aurora.Dialog.Dark" parent="@style/Theme.MaterialComponents.Dialog">
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:textViewStyle">@style/TextAppearance.Aurora.TextView</item>
+    </style>
+
+    <style name="Widget.Aurora.Dialog">
+        <item name="android:background">@drawable/dialog_bg</item>
+        <item name="android:elevation">@dimen/dialog_elevation</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="Widget.Aurora.BorderlessButton" parent="@style/Widget.MaterialComponents.Button.TextButton">
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?colorPrimary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:letterSpacing">0.025</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingTop">@dimen/padding_borderless_button</item>
+        <item name="android:paddingBottom">@dimen/padding_borderless_button</item>
+    </style>
+
+    <style name="Widget.Aurora.RaisedButton" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:background">@drawable/raised_button_background</item>
+        <item name="android:letterSpacing">0.025</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <style name="Widget.Aurora.BorderlessButton.Compact" parent="@style/Widget.Aurora.BorderlessButton">
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="Widget.Aurora.Card.Black" parent="@style/CardView.Dark">
+        <item name="cardBackgroundColor">@color/black</item>
+    </style>
+
+    <style name="Widget.Aurora.FilterChip" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="android:textAppearance">@style/TextAppearance.Aurora.ChipText</item>
+        <item name="checkedIcon">@drawable/ic_chip_checked</item>
+        <item name="chipEndPadding">10dp</item>
+    </style>
+
+    <style name="Widget.Aurora.FilterAction" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="android:textAppearance">@style/TextAppearance.Aurora.ChipText</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+</resources>

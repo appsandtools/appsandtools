@@ -1,0 +1,122 @@
+/*
+ * Aurora Store
+ * Copyright (C) 2018  Rahul Kumar Patel <whyorean@gmail.com>
+ *
+ * Yalp Store
+ * Copyright (C) 2018 Sergey Yeriomin <yeriomin@gmail.com>
+ *
+ * Aurora Store (a fork of Yalp Store )is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * Aurora Store is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Aurora Store.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+apply plugin: 'com.android.application'
+
+ext.minimumSdkVersion = 21
+ext.versionMajor = 2
+ext.versionMinor = 0
+ext.versionPatch = 5
+ext.versionClassifier = null
+ext.isSnapshot = false
+ext.isBeta = true
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        applicationId "com.dragons.aurora"
+        minSdkVersion project.ext.minimumSdkVersion
+        targetSdkVersion 28
+
+        versionCode generateVersionCode()
+        versionName generateVersionName()
+
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        warning 'MissingTranslation', 'GetLocales', 'VectorDrawableCompat'
+        abortOnError false
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    //UI
+    implementation 'androidx.appcompat:appcompat:1.0.0-rc02'
+    implementation 'androidx.palette:palette:1.0.0-rc02'
+    implementation 'androidx.cardview:cardview:1.0.0-rc02'
+    implementation 'androidx.preference:preference:1.0.0-rc02'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0-rc02'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
+    implementation 'com.google.android.material:material:1.0.0-rc02'
+    implementation 'com.aurelhubert:ahbottomnavigation:2.1.0'
+
+    //RXJava2
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+
+    //Utils
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.nothome:javaxdelta:2.0.1'
+    implementation 'eu.chainfire:libsuperuser:1.0.0.201602242357'
+    implementation 'com.scottyab:rootbeer-lib:0.0.7'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.github.percolate:caffeine:0.4.7'
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+    implementation 'commons-net:commons-net:3.6'
+
+    //ButterKnife
+    repositories {
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+    }
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+
+    //APIs
+    implementation 'com.github.whyorean:playstore-api-v2:2.0'
+}
+
+private Integer generateVersionCode() {
+    return ext.minimumSdkVersion * 10000000 + ext.versionMajor * 10000 + ext.versionMinor * 100 + ext.versionPatch
+}
+
+private String generateVersionName() {
+    String versionName = "${ext.versionMajor}.${ext.versionMinor}.${ext.versionPatch}"
+    if (ext.versionClassifier == null) {
+        if (ext.isSnapshot)
+            ext.versionClassifier = "SNAPSHOT"
+        else if (ext.isBeta)
+            ext.versionClassifier = "β"
+        else
+            ext.versionClassifier = "α"
+    }
+
+    if (ext.versionClassifier != null) {
+        versionName += "-" + ext.versionClassifier
+    }
+    return versionName;
+}

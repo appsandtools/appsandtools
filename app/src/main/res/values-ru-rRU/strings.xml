@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Aurora Store
+  ~ Copyright (C) 2018  Rahul Kumar Patel <whyorean@gmail.com>
+  ~
+  ~ Aurora Store (a fork of Yalp Store )is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 2 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Aurora Store is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Aurora Store.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+    <string name="about_app">"Aurora это альтернатива Play Store с открытым исходным кодом, позволяющая загружать приложения из Play Store. Aurora позволит вам обновлять установленные приложения, искать и устанавливать новые."</string>
+    <string name="about_telegram">"Telegram"</string>
+    <string name="about_xda">"Тема на XDA"</string>
+    <string name="account_dummy_email">"anonymous@anonymous"</string>
+    <string name="acc_dummy">"Войти анонимно"</string>
+    <string name="acc_dummy_name">"Анонимная авторизация"</string>
+    <string name="acc_google">"Войти используя Google"</string>
+    <string name="acc_save">"Сохранить аккаунт"</string>
+    <string name="action_about">"О программе"</string>
+    <string name="action_accounts">"Аккаунты"</string>
+    <string name="action_acc_add">"Добавить аккаунт Google"</string>
+    <string name="action_acc_switch">"Коснитесь, чтобы переключиться"</string>
+    <string name="action_acc_txt">"Аккаунты Aurora"</string>
+    <string name="action_categories">"Категории"</string>
+    <string name="action_get_local_apk">"Сохранить установленный apk файл"</string>
+    <string name="action_home">"Домой"</string>
+    <string name="action_myApps">"Приложения"</string>
+    <string name="action_ignore">"Игнорировать обновления"</string>
+    <string name="action_ignore_ext">"Добавить в чёрный список"</string>
+    <string name="action_login">"Войти"</string>
+    <string name="action_logout">"Выйти"</string>
+    <string name="action_make_normal">"Сделать пользовательским приложением"</string>
+    <string name="action_make_system">"Сделать системным приложением"</string>
+    <string name="action_manual">"Загрузка вручную"</string>
+    <string name="action_more">"Ещё"</string>
+    <string name="action_ok">"OK"</string>
+    <string name="action_or">"или"</string>
+    <string name="action_refresh">"Обновить токен"</string>
+    <string name="action_remove">"Удалить"</string>
+    <string name="action_search_history">"История поиска"</string>
+    <string name="action_search_clearHistory">"Очистить"</string>
+    <string name="action_search_title">"Поиск приложений и игр"</string>
+    <string name="action_select">"Выберите аккаунт для входа"</string>
+    <string name="action_settings">"Настройки"</string>
+    <string name="action_spoofed">"Имитация"</string>
+    <string name="action_switch_dummy">"Сменить аккаунт"</string>
+    <string name="action_switch_google">"Сменить аккаунт"</string>
+    <string name="action_unignore">"Убрать из чёрного списка"</string>
+    <string name="action_unwhitelist">"Игнорировать обновления"</string>
+    <string name="action_updates">"Обновления"</string>
+    <string name="action_welcome_msg">"Добро пожаловать в Aurora"</string>
+    <string name="action_whitelist">"Белый список обновлений"</string>
+    <string name="activity_title_search">"Результаты %1$s"</string>
+    <string name="all_categories">"Все категории"</string>
+    <string name="apps_by">"Приложения %1$s"</string>
+    <string name="availability_restriction_country">"Недоступно в вашей стране."</string>
+    <string name="availability_restriction_generic">"Недоступно."</string>
+    <string name="availability_restriction_hardware_app">"Ваше устройство не совместимо с данной версией."</string>
+    <string name="category_appFree">"Бесплатные"</string>
+    <string name="category_topFree">"Топ бесплатных"</string>
+    <string name="category_topGrossing">"Бестселлеры"</string>
+    <string name="category_trending">"Популярные"</string>
+    <string name="content_flagged">"Замечание принято."</string>
+    <string name="credentials_hint_email">"Email или телефон"</string>
+    <string name="credentials_hint_password">"Введите пароль"</string>
+    <string name="credentials_logo_txt">"Войти"</string>
+    <string name="credentials_title">"Доступ к аккаунту Google"</string>
+    <string name="delete">"Удалить"</string>
+    <string name="delta_disabled">"Дельта обновления отключены"</string>
+    <string name="delta_enabled">"Дельта обновления включены"</string>
+    <string name="details_appReview">"Отзывы"</string>
+    <string name="details_cancel">"Отмена"</string>
+    <string name="details_category">"%1$s"</string>
+    <string name="details_contains_ads">"Есть реклама"</string>
+    <string name="details_could_not_copy_apk">"Не удалось скопировать apk"</string>
+    <string name="details_changelog_empty">"Список изменений недоступен"</string>
+    <string name="details_developer">"%1$s"</string>
+    <string name="details_download">"Скачать"</string>
+    <string name="details_download_checking">"Проверка"</string>
+    <string name="details_download_not_available">"Недоступно"</string>
+    <string name="details_install">"Установить"</string>
+    <string name="details_installed">"Успешно установлено"</string>
+    <string name="details_installing">"Установка"</string>
+    <string name="details_install_failure">"Не удалось установить"</string>
+    <string name="details_less">"Меньше информации"</string>
+    <string name="details_manual">"Вручную"</string>
+    <string name="details_more">"Больше информации"</string>
+    <string name="details_not_available_on_play_store">"Недоступно в Play Store"</string>
+    <string name="details_no_ads">"Нет рекламы"</string>
+    <string name="details_permissions">"Разрешения"</string>
+    <string name="details_playstore">"Play Store"</string>
+    <string name="details_purchase">"Купить"</string>
+    <string name="details_rate_this_app">"Оценить приложение:"</string>
+    <string name="details_review_dialog_fields_optional">"Вы можете не заполнять поля."</string>
+    <string name="details_review_dialog_review_comment_hint">"Комментарий"</string>
+    <string name="details_review_dialog_review_title_hint">"Заголовок"</string>
+    <string name="details_review_dialog_title">"Добавить ещё что-нибудь?"</string>
+    <string name="details_run">"Открыть"</string>
+    <string name="details_saved_in_downloads">"Сохранено в папку загрузок"</string>
+    <string name="details_share">"Поделиться"</string>
+    <string name="details_signature_mismatch">"Новая версия подписана другим ключом. Чтобы установить новую версию нужно сначала удалить предыдущую. Сделайте это и попробуйте снова. (Имейте ввиду, что удаление приложения так же удалит и данные приложения)"</string>
+    <string name="details_size">"%1$s"</string>
+    <string name="details_uninstall">"Удалить"</string>
+    <string name="details_update">"Обновить"</string>
+    <string name="details_updated">"%1$s"</string>
+    <string name="details_versionName">"%1$s"</string>
+    <string name="details_you_rated_this_app">"Вы оценили это приложение:"</string>
+    <string name="device_gsfID">"Идентификатор GSF : %1$s"</string>
+    <string name="device_model">"%1$s ( %2$s )"</string>
+    <string name="dialog_message_busybox_not_available">"Требуется устройство с рут-правами и установленным busybox. Поискать установщик busybox ?"</string>
+    <string name="dialog_message_checking_busybox">"Для работы с системными приложениями требуются определенные системные инструменты. Проверка их наличия."</string>
+    <string name="dialog_message_logging_in_predefined">"Попытка входа с учетными данными предосталвенными Aurora Store"</string>
+    <string name="dialog_message_logging_in_provided_by_user">"Попытка входа с введёнными учетными данными"</string>
+    <string name="dialog_message_logout">"Вы уверены, что хотите выйти?"</string>
+    <string name="dialog_message_reboot_required">"Изменения вступят в силу после перезагрузки. Перезагрузить сейчас?"</string>
+    <string name="dialog_message_remounting_system">"Работаем с разделом /system. Это может занять некоторое время."</string>
+    <string name="dialog_message_switching_in_predefined">"Попытка сменить анонимный аккаунт"</string>
+    <string name="dialog_message_system_app_self">"Использование привилегированных разрешений позволяет использовать фоновую установку приложений и требует, чтобы Aurora Store был системным приложением.
+
+Данный процесс несовершенен и специфичен для производителя устройства, поэтому он может не сработать.
+
+Продолжить?"</string>
+    <string name="dialog_message_system_app_warning_to_normal">"Вы собираетесь сделать приложение пользовательским. Большинству системных приложений требуется быть системными для работы.
+
+Имейте в виду, что процесс преобразования в пользовательское приложение НЕ поддерживается ОС Android и поэтому НЕ безопасен и может НЕ сработать.
+
+Не делайте это из любопытства. Это может сломать ваше устройство. Сделайте бэкап перед началом."</string>
+    <string name="dialog_message_system_app_warning_to_system">"Вы собираетесь сделать приложение системным. Большинству приложений не требуется быть системными для работы.
+
+Имейте в виду, что процесс преобразования в системное приложение НЕ поддерживается ОС Android и поэтому НЕ безопасен и может НЕ сработать.
+
+Не делайте это из любопытства. Это может сломать ваше устройство. Сделайте бэкап перед началом."</string>
+    <string name="dialog_message_system_app_warning_uninstall">"Вы уверены, что хотите удалить это системное приложение? Системные приложения установлены поставщиком устройства и, скорее всего, необходимы для его нормальной работы.
+
+Имейте в виду, что удаление системных приложений НЕ поддерживается ОС Android и поэтому НЕ безопасно и может НЕ сработать.
+
+Не делайте это из любопытства. Это может сломать ваше устройство. Сделайте бэкап перед началом."</string>
+    <string name="dialog_message_two_factor">"Похоже вы включили двухфакторную аутентификацию для своего аккаунта.
+
+Пожалуйста, создайте специальный пароль и используйте его для входа в Aurora Store.
+
+Нажмите \"Создать пароль\" чтобы перейти на страницу создания пароля."</string>
+    <string name="dialog_title_busybox_not_available">"Busybox не найден"</string>
+    <string name="dialog_title_checking_busybox">"Проверка наличия busybox"</string>
+    <string name="dialog_title_logging_in">"Вход"</string>
+    <string name="dialog_title_logout">"Выйти?"</string>
+    <string name="dialog_title_reboot_required">"Требуется перезагрузка"</string>
+    <string name="dialog_title_remounting_system">"Работа с разделом /system"</string>
+    <string name="dialog_title_system_app_self">"Перемещение Aurora в систему"</string>
+    <string name="dialog_title_system_app_warning">"Внимание!"</string>
+    <string name="dialog_title_two_factor">"Двухфакторная аутентификация"</string>
+    <string name="dialog_two_factor_cancel">"Не сейчас"</string>
+    <string name="dialog_two_factor_create_password">"Создать пароль"</string>
+    <string name="done">"Готово"</string>
+    <string name="download_manager_ERROR_BLOCKED">"Загрузка не удалась из-за настроек NetworkPolicyManager запрашиваемого приложения. Проверьте настройки."</string>
+    <string name="download_manager_ERROR_CANNOT_RESUME">"Возникла временная ошибка, но возможно возобновить загрузку. Попробуйте позже."</string>
+    <string name="download_manager_ERROR_DEVICE_NOT_FOUND">"Не найдено внешнее запоминающее устройство. Возможно SD карта не подключена."</string>
+    <string name="download_manager_ERROR_FILE_ERROR">"Неизвестная ошибка хранилища."</string>
+    <string name="download_manager_ERROR_HTTP_DATA_ERROR">"Ошибка при получении или обработке данных на уровне HTTP."</string>
+    <string name="download_manager_ERROR_INSUFFICIENT_SPACE">"Недостаточно места на устройстве."</string>
+    <string name="download_manager_ERROR_TOO_MANY_REDIRECTS">"Слишком много перенаправлений."</string>
+    <string name="download_manager_ERROR_UNHANDLED_HTTP_CODE">"Диспетчер загрузки не может обработать полученный HTTP код. Это ошибка сервера."</string>
+    <string name="download_manager_ERROR_UNKNOWN">"Неизвестная ошибка."</string>
+    <string name="early_access">"Ранний доступ"</string>
+    <string name="error_could_not_download">"Не удалось загрузить."</string>
+    <string name="error_credentials_empty">"Предоставьте, пожалуйста, данные учетной записи Google."</string>
+    <string name="error_downloads_directory_not_writable">"Папка для загрузок не может быть создана или не доступна для записи."</string>
+    <string name="error_incorrect_password">"Неверный e-mail или пароль."</string>
+    <string name="error_invalid_device_definition">"Определение устройства отклонено."</string>
+    <string name="error_network_other">"Ошибка сети: %1$s"</string>
+    <string name="error_not_purchased">"Похоже приложение не куплено.
+Перейти на страницу приложения в Play Store?"</string>
+    <string name="error_no_network">"Нет соединения."</string>
+    <string name="error_token_dispenser_problem">"Невозможно войти без аккаунта. Попробуйте использовать свой аккаунт."</string>
+    <string name="exodus_hasTracker">"Содержит %1$s трекера(ов)"</string>
+    <string name="exodus_noTracker">"Не содержит трекеров"</string>
+    <string name="exodus_powered">"Powered by Exodus"</string>
+    <string name="exodus_title">"Aurora Protect"</string>
+    <string name="exodus_viewMore">"Подробности"</string>
+    <string name="flagging_title">"Отметить как несоответствующий"</string>
+    <string name="flag_graphic_violence">"Сцены насилия"</string>
+    <string name="flag_harmful_prompt">"Опишите вред, причиненный вашему устройству или данным:"</string>
+    <string name="flag_harmful_to_device">"Опасно для устройства или данных"</string>
+    <string name="flag_hateful_content">"Оскорбительный или разжигающий ненависть контент"</string>
+    <string name="flag_impersonation_copycat">"Подражание"</string>
+    <string name="flag_improper_content_rating">"Неверный рейтинг контента"</string>
+    <string name="flag_other_concern_prompt">"Опишите замечание"</string>
+    <string name="flag_other_objection">"Другие замечания"</string>
+    <string name="flag_page_description">"Причина, по которой вы считаете этот контент или приложение неприемлемым:"</string>
+    <string name="flag_pharma_content">"Незаконный рецепт или другой препарат"</string>
+    <string name="flag_sexual_content">"Эротический контент"</string>
+    <string name="header_usr_noEmail">"Войдите, чтобы использовать"</string>
+    <string name="list_app_blacklisted">"В чёрном списке"</string>
+    <string name="list_app_depends_on_gsf">"Зависит от GSF"</string>
+    <string name="list_app_has_ads">"Есть реклама"</string>
+    <string name="list_app_independent_from_gsf">"Не зависит от GSF"</string>
+    <string name="list_app_no_ads">"Нет рекламы"</string>
+    <string name="list_app_system">"Системное приложение"</string>
+    <string name="list_app_user">"Пользовательское приложение"</string>
+    <string name="list_app_whitelisted">"В белом списке"</string>
+    <string name="list_empty_query">"История поиска пуста"</string>
+    <string name="list_empty_search">"Приложения не найдены"</string>
+    <string name="list_empty_updates">"Нет обновлений"</string>
+    <string name="list_installed_title">"Приложения и игры"</string>
+    <string name="list_installed_summary">"Все пользовательские и системные приложения"</string>
+    <string name="list_installed_system">"Только пользовательские приложения"</string>
+    <string name="list_line_2_updatable">"Обновлено %1$s"</string>
+    <string name="list_update_automatic">"Поддерживайте актуальность ваших приложений"</string>
+    <string name="list_update_automatic_summ">"Обновления дают вам улучшения и новые возможности. Aurora будет обновлять приложения только по WiFi.
+
+Включить ежедневную проверку обновлений ?"</string>
+    <string name="list_update_automatic_switch">"Включить"</string>
+    <string name="list_update_all">"Обновить всё"</string>
+    <string name="list_update_all_txt">"Доступны обновления"</string>
+    <string name="list_update_chk_txt">"Проверка обновлений …"</string>
+    <string name="list_update_recheck">"Перепроверить"</string>
+    <string name="list_updating">"Обновление…"</string>
+    <string name="manual_download_compatible">"Поле кода версии было автоматически заполнено последним совместимым кодом версии приложения. Если вы хотит использовать предыдущую версию приложения введите код меньше текущего. Если разработчик не удалил .apk предыдущей версии из Play Store у вас будет возможность его загрузить."</string>
+    <string name="manual_download_hint_version_code">"Код версии"</string>
+    <string name="manual_download_incompatible">"Google Play Store считает это приложение несовместимым с вашим устройством. Это означает, что сервер Google Play Store не вернул код версии приложения."</string>
+    <string name="notification_download_complete">"Загрузка завершена. Коснитесь для установки."</string>
+    <string name="notification_download_complete_new_permissions">"Загрузка завершена. Запрошено новое разрешение."</string>
+    <string name="notification_download_complete_new_permissions_toast">"%1$s загружено. Новая версия приложения запрашивает новые разрешения. Просмотрите список новых разрешений."</string>
+    <string name="notification_download_complete_signature_mismatch">"Загрузка завершена. Похоже не совпадают подписи apk."</string>
+    <string name="notification_download_complete_signature_mismatch_toast">"%1$s загружено, но подпись загруженного apk не совпадает с установленным. Сначала удалите установленное приложение."</string>
+    <string name="notification_download_complete_toast">"%1$s загружено. Нажмите кнопку установки или коснитесь уведомления, чтобы установить."</string>
+    <string name="notification_download_progress">"Скачано %1$s из %2$s"</string>
+    <string name="notification_download_starting">"Начало загрузки"</string>
+    <string name="notification_installation_complete">"Обновление установлено."</string>
+    <string name="notification_installation_failed">"Установка обновления не удалась."</string>
+    <string name="notification_not_privileged">"Не предоставлено разрешение для фоновой установки"</string>
+    <string name="notification_updates_available_message">"Обновления доступны для %1$d приложений."</string>
+    <string name="notification_updates_available_title">"Доступны обновления приложения."</string>
+    <string name="no_permissions">"Разрешения не используются."</string>
+    <string name="pref_auto_install">"Немедленная установка приложения"</string>
+    <string name="pref_auto_install_summary_off">"Приложения устанавливаются, когда пользователь касается уведомления о завершении загрузки"</string>
+    <string name="pref_auto_install_summary_on">"Приложения устанавливаются сразу после загрузки"</string>
+    <string name="pref_auto_whitelist">"Автоматический белый список"</string>
+    <string name="pref_auto_whitelist_summary_off">"Вам нужно вручную внести приложения в белый список"</string>
+    <string name="pref_auto_whitelist_summary_on">"Приложения установленные при помощи Aurora автоматически попадают в белый список"</string>
+    <string name="pref_background_update_download">"Загрузка обновлений"</string>
+    <string name="pref_background_update_download_summary_off">"Только уведомление"</string>
+    <string name="pref_background_update_download_summary_on">"Обновления устанавливаются автоматически"</string>
+    <string name="pref_background_update_install">"Установка обновлений (root)"</string>
+    <string name="pref_background_update_install_summary_off">"Только уведомление"</string>
+    <string name="pref_background_update_install_summary_on">"Обновления устанавливаются автоматически (root)"</string>
+    <string name="pref_background_update_interval">"Период проверки обновлений"</string>
+    <string name="pref_background_update_interval_daily">"Ежедневно"</string>
+    <string name="pref_background_update_interval_hourly">"Ежечасно"</string>
+    <string name="pref_background_update_interval_manually">"Вручную"</string>
+    <string name="pref_background_update_interval_never">"При запуске Aurora Store"</string>
+    <string name="pref_background_update_interval_weekly">"Еженедельно"</string>
+    <string name="pref_background_update_wifi_only">"Только по Wi-Fi"</string>
+    <string name="pref_category_installation">"Установка"</string>
+    <string name="pref_category_ui">"Интерфейс пользователя"</string>
+    <string name="pref_category_updates">"Обновления"</string>
+    <string name="pref_delete_apk_after_install">"Удаление .apk после установки"</string>
+    <string name="pref_delete_apk_after_install_summary_off">"Сейчас .apk файлы НЕ удаляются после установки"</string>
+    <string name="pref_delete_apk_after_install_summary_on">"Сейчас .apk файлы удаляются после установки"</string>
+    <string name="pref_device_to_pretend_to_be">"Притворяться другим устройством"</string>
+    <string name="pref_device_to_pretend_to_be_default">"Оригинальная информация об устройстве"</string>
+    <string name="pref_device_to_pretend_to_be_toast">"Изменения вступят в силу после повторного входа в аккаунт"</string>
+    <string name="pref_download_deltas">"Дельта обновления"</string>
+    <string name="pref_download_deltas_summary_off">"Сейчас загружается весь apk"</string>
+    <string name="pref_download_deltas_summary_on">"Сейчас загружаются только изменения"</string>
+    <string name="pref_download_directory">"Папка для загрузок"</string>
+    <string name="pref_installation_method">"Метод установки"</string>
+    <string name="pref_installation_method_default">"Стандартный диалог установки, фоновая установка недоступна"</string>
+    <string name="pref_installation_method_privileged">"С использованием системных прав"</string>
+    <string name="pref_installation_method_root">"С использованием root"</string>
+    <string name="pref_message_fallback">"Попытаться установить резервную директорию (%1$s)?"</string>
+    <string name="pref_not_privileged">"Доступно только если Aurora установлен в систему"</string>
+    <string name="pref_no_images">"Загрузка изображений только по Wi-Fi"</string>
+    <string name="pref_no_images_summary_off">"Сейчас изображения загружаются всегда"</string>
+    <string name="pref_no_images_summary_on">"Сейчас изображения загружаются только по Wi-Fi"</string>
+    <string name="pref_no_root">"Эта настройка доступна только для усройств с root-правами."</string>
+    <string name="pref_requested_language">"Язык запросов в Play Store"</string>
+    <string name="pref_requested_language_default">"Ваш язык по умолчанию"</string>
+    <string name="pref_update_list_black">"Изменить чёрный список приложений"</string>
+    <string name="pref_update_list_white">"Изменить белый список приложений"</string>
+    <string name="pref_update_list_white_or_black">"Чёрный или белый списки обновлений"</string>
+    <string name="pref_update_list_white_or_black_black">"Выбранные приложения не будут проверяться на наличие обновлений."</string>
+    <string name="pref_update_list_white_or_black_white">"Только выбранные приложения будут проверяться на наличие обновлений"</string>
+    <string name="search_filter">"Все приложения"</string>
+    <string name="search_title">"Поиск"</string>
+    <string name="submit">"Подтвердить"</string>
+    <string name="testing_program_opt_in">"присоединиться"</string>
+    <string name="testing_program_opt_out">"покинуть"</string>
+    <string name="testing_program_review_dialog_content_hint">"Введите отзыв о приложении"</string>
+    <string name="testing_program_section_opted_in_message">"Обновления приложения будут включать бета версии. Если вы покинете программу бета тестирования приложения вы больше не будете получать бета версии."</string>
+    <string name="testing_program_section_opted_in_propagating_message">"В течение нескольких минут вы будете зарегистрированы в программе бета тестирования. После этого вы сможете обновлять приложение до бета версий если они будут доступны."</string>
+    <string name="testing_program_section_opted_in_title">"Вы бета тестер"</string>
+    <string name="testing_program_section_opted_out_message">"Попробуйте новые функции до того, как они станут общедоступными. Отправляйте ваш озыв напрямую разработчику."</string>
+    <string name="testing_program_section_opted_out_propagating_message">"Выход из программы бета тестирования может занять несколько минут."</string>
+    <string name="testing_program_section_opted_out_title">"Стать бета тестером"</string>
+    <string name="top_categories">"Лучшие категории"</string>
+    <string name="acc_dummy_summary">"Выполняя анонимный вход через учетную запись предоставленную Aurora Store вы не будете иметь доступ к своим оплаченным приложениям."</string>
+    <string name="action_filter_misc">"Разное"</string>
+    <string name="action_filter_build">"Сборка"</string>
+    <string name="action_filter_apply">"Применить"</string>
+    <string name="action_search_history_apps">"Ваши недавние приложения"</string>
+    <string name="pref_theme_title">"Тема оформления"</string>
+    <string name="pref_theme_title_summary">"Переключиться между темами Light/Dark/AMOLED"</string>
+    <string name="action_filter">"Фильтры"</string>
+    <string name="action_filter_apps_with_ads">"Приложения с рекламой"</string>
+    <string name="action_filter_downloads">"Загрузки"</string>
+    <string name="action_filter_gsf_dependent_apps">"Зависит от GSF"</string>
+    <string name="action_filter_paid_apps">"Платное"</string>
+    <string name="action_filter_rating">"Рейтинги"</string>
+    <string name="action_filter_all">"Все"</string>
+    <string name="manual_download_disclaimer">"Дисклеймер "</string>
+    <string name="manual_download_warning">"Тут вы можете вручную выбрать версию приложения для загрузки.\n\nИмейте ввиду, что загрузка произвольных версий приложений не поддерживается Google Play Store. Успех зависит от верно угаданного кода версии. Даже если вам повезёт и вы начнете загрузку, вы можете получить несовместимый apk."</string>
+    <string name="ohh_snap_text">"Что-то пошло не так"</string>
+    <string name="ohh_snap_retry">"Повторить"</string>
+    <string name="pref_app_ui">"Цвета интерфейса"</string>
+    <string name="pref_app_ui_summary">"Сделайте интерфейс красочнее используя цвета значков приложений."</string>
+    <string name="pref_app_swipe">"Переход между страницами"</string>
+    <string name="pref_app_swipe_summary">"Свайп для перехода между страницами."</string>
+    <string name="pref_app_ime">"Отображение клавиатуры"</string>
+    <string name="pref_app_ime_summary">"Отображать клавиатуру на странице поиска по умолчанию."</string>
+    <string name="tagview_games">"Игры"</string>
+    <string name="tagview_family">"Для всей семьи"</string>
+    <string name="pref_category_spoof_device">"Устройство"</string>
+    <string name="pref_category_spoof_lang">"Язык"</string>
+    <string name="about_fdroid">"F-Droid"</string>
+    <string name="about_gitlab">"GitLab"</string>
+    <string name="about_gitlab_summary">"Исходный код Aurora на странице проекта Aurora OSS на GitLab."</string>
+    <string name="about_telegram_summary">"Присоединяйтесь к обсуждению или вносите предложения в группе поддержки Aurora."</string>
+    <string name="about_xda_summary">"Присоединяйтесь к обсуждению или вносите предложения в теме Aurora на XDA."</string>
+    <string name="about_fdroid_summary">"Скачать Aurora из репозитория F-Droid"</string>
+    <string name="action_enable">"Включить"</string>
+    <string name="action_disable">"Отключить"</string>
+    <string name="details_run_with">"Открыть с помощью"</string>
+    <string name="location_spoof_warning">"Подделка местоположения позволяет загружать приложения недоступные для вашего региона, для использования этой функции вам понадобится настроить VPN-соединение."</string>
+    <string name="location_spoof_howtos">"1. Включите параметры для разработчиков в настройках \ n2. Установите Aurora в качестве приложения для фиктивного местоположения \ n3. Выберите подделку местоположения в приложении \ n4. Включите VPN, чтобы выбрать страну или регион \ n5. Перезапустите приложение и наслаждайтесь."</string>
+    <string name="location_spoof_readme">"Прочти меня"</string>
+    <string name="pref_app_subcategory">"Предпочитаемая подкатегория"</string>
+    <string name="pref_app_subcategory_summary">"Выберите подкатегорию приложений отображаемую на домашнем экране"</string>
+    <string name="pref_app_subcategory_free">"Топ бесплатных"</string>
+    <string name="pref_app_subcategory_grossing">"Бестселлеры"</string>
+    <string name="pref_app_subcategory_trending">"В тренде"</string>
+    <string name="pref_category_spoof_location">"Подделка местоположения"</string>
+    <string name="pref_requested_location_summary">"Aurora Store должна быть установлена как приложение для фиктивных местоположений"</string>
+    <string name="pref_requested_location_enable">"Вам необходимо вручную включить использование фиктивных местоположений из параметров для разработчиков."</string>
+    <string name="pref_requested_location_disable">"Вам необходимо вручную отключить использование фиктивных местоположений из параметров для разработчиков, для полного отключения функции."</string>
+</resources>

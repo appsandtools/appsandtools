@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Aurora Store
+  ~ Copyright (C) 2018  Rahul Kumar Patel <whyorean@gmail.com>
+  ~
+  ~ Yalp Store
+  ~ Copyright (C) 2018 Sergey Yeriomin <yeriomin@gmail.com>
+  ~
+  ~ Aurora Store (a fork of Yalp Store )is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 2 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Aurora Store is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Aurora Store.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorAccent"
+        app:elevation="0dp">
+
+        <RelativeLayout
+            android:id="@+id/topView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <TextView
+                android:id="@+id/accounts_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/action_acc_txt"
+                android:textAppearance="@style/TextAppearance.Aurora.Title"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/account_gsf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accounts_title"
+                android:layout_centerHorizontal="true"
+                android:textAppearance="@style/TextAppearance.Aurora.SubTitle"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/dummyCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/avatar_dummy"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_margin="10dp"
+                            app:srcCompat="@drawable/ic_dummy_avatar" />
+
+                        <TextView
+                            android:id="@+id/account_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_toEndOf="@id/avatar_dummy"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:textAppearance="@style/TextAppearance.Aurora.Title" />
+
+                        <TextView
+                            android:id="@+id/account_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/account_name"
+                            android:layout_toEndOf="@id/avatar_dummy"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:textAppearance="@style/TextAppearance.Aurora.SubTitle" />
+
+                        <TextView
+                            android:id="@+id/dummy_tapToSwitch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/account_email"
+                            android:layout_toEndOf="@id/avatar_dummy"
+                            android:fontFamily="@font/google_sans"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:text="@string/action_acc_switch"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/avatar_dummy"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="@string/acc_dummy_summary" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end">
+
+                        <Button
+                            android:id="@+id/btn_refresh"
+                            style="@style/Widget.Aurora.BorderlessButton.Compact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@id/btn_switch"
+                            android:text="@string/action_refresh"
+                            android:textColor="?colorAccent"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/btn_switch"
+                            style="@style/Widget.Aurora.BorderlessButton.Compact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@id/btn_logout"
+                            android:text="@string/action_switch_dummy"
+                            android:textColor="?colorAccent"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/btn_logout"
+                            style="@style/Widget.Aurora.BorderlessButton.Compact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="@string/action_logout"
+                            android:textColor="@color/colorRed"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/googleCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dummyCard"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:visibility="gone"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/avatar_google"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_margin="10dp"
+                            app:srcCompat="@drawable/ic_user_placeholder" />
+
+                        <TextView
+                            android:id="@+id/account_nameG"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_toEndOf="@id/avatar_google"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:textAppearance="@style/TextAppearance.Aurora.Title" />
+
+                        <TextView
+                            android:id="@+id/account_emailG"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/account_nameG"
+                            android:layout_toEndOf="@id/avatar_google"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:textAppearance="@style/TextAppearance.Aurora.SubTitle" />
+
+                        <TextView
+                            android:id="@+id/google_tapToSwitch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/account_emailG"
+                            android:layout_toEndOf="@id/avatar_google"
+                            android:fontFamily="@font/google_sans"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:text="@string/action_acc_switch"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/avatar_google"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="@string/acc_google_summary" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end">
+
+                        <Button
+                            android:id="@+id/btn_switchG"
+                            style="@style/Widget.Aurora.BorderlessButton.Compact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@id/btn_remove"
+                            android:text="@string/action_switch_google"
+                            android:textColor="?colorAccent"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/btn_remove"
+                            style="@style/Widget.Aurora.BorderlessButton.Compact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/btn_logoutG"
+                            android:text="@string/action_remove"
+                            android:textColor="@color/colorRed"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/btn_logoutG"
+                            style="@style/Widget.Aurora.BorderlessButton.Compact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="@string/action_logout"
+                            android:textColor="@color/colorRed"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/googleCard"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:scrollbars="none">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:chipSpacing="@dimen/margin_small"
+                    app:singleLine="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_tos"
+                        style="@style/Widget.MaterialComponents.Chip.Action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/acc_google_tos"
+                        android:textColor="?android:attr/textColorPrimary"
+                        app:chipBackgroundColor="?android:panelBackground"
+                        app:chipIcon="@drawable/ic_add_alt"
+                        app:chipIconTint="@color/colorAccent"
+                        app:chipStrokeColor="?android:strokeColor" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_add"
+                        style="@style/Widget.MaterialComponents.Chip.Action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/chip_tos"
+                        android:text="@string/action_acc_add"
+                        android:textColor="?android:attr/textColorPrimary"
+                        android:visibility="gone"
+                        app:chipBackgroundColor="?android:panelBackground"
+                        app:chipIcon="@drawable/ic_add_alt"
+                        app:chipIconTint="@color/colorAccent"
+                        app:chipStrokeColor="?android:strokeColor" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

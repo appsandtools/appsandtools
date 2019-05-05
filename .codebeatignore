@@ -1,0 +1,8 @@
+/app/src/main/java/com/github/yeriomin/yalpstore/LruCache.java
+/app/src/main/java/com/github/yeriomin/yalpstore/FileProvider.java
+/app/src/main/java/com/github/yeriomin/yalpstore/MultiSelectListPreference.java
+/app/src/main/java/com/github/yeriomin/yalpstore/EglExtensionRetriever.java
+/app/src/main/java/com/github/yeriomin/yalpstore/model/App.java
+/app/src/main/java/com/github/yeriomin/yalpstore/model/LoginInfo.java
+/app/src/main/java/com/github/yeriomin/yalpstore/model/AppBuilder.java
+/app/src/main/java/com/github/yeriomin/yalpstore/model/Filter.java
