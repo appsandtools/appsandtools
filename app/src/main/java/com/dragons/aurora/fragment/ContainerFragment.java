@@ -116,7 +116,9 @@ public class ContainerFragment extends Fragment implements UpdatableAppsFragment
             }
         } else {
             resetUser();
-            askLogin();
+//            askLogin();
+//            Not asking to log in. Performing log in automatically with anonymous credentials.
+            getContext().startActivity(new Intent(getContext(), LoginActivity.class));
         }
     }
 

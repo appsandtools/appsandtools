@@ -23,8 +23,11 @@ package com.dragons.aurora;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.dragons.aurora.adapters.NativeHttpClientAdapter;
 import com.dragons.aurora.model.LoginInfo;
@@ -43,7 +46,9 @@ import timber.log.Timber;
 
 public class PlayStoreApiAuthenticator {
 
-    static private final int RETRIES = 5;
+    private static String TAG = PlayStoreApiAuthenticator.class.getSimpleName();
+
+    static private final int RETRIES = 15;
     private static GooglePlayAPI api;
     private static TokenDispenserMirrors tokenDispenserMirrors = new TokenDispenserMirrors();
     private Context context;
@@ -126,6 +131,7 @@ public class PlayStoreApiAuthenticator {
     }
 
     private GooglePlayAPI build(LoginInfo loginInfo, int retries) throws IOException {
+        Log.d(TAG, "build");
         int tried = 0;
         tokenDispenserMirrors.reset();
         while (tried < retries) {
@@ -138,7 +144,9 @@ public class PlayStoreApiAuthenticator {
                 // Impossible, unless there are mistakes, so no need to make it a declared exception
                 throw new RuntimeException(e);
             } catch (AuthException | TokenDispenserException e) {
-                if (PlayStoreTask.noNetwork(e.getCause())) {
+                Log.d(TAG, "Login error message: " + e.getMessage());
+                //Stop retrying only in case there is no network available.
+                if (PlayStoreTask.noNetwork(e.getCause()) && !isNetworkAvailable(context)) {
                     throw (IOException) e.getCause();
                 }
                 loginInfo.setTokenDispenserUrl(null);
@@ -151,10 +159,16 @@ public class PlayStoreApiAuthenticator {
                 if (tried >= retries) {
                     throw e;
                 }
+                Log.d(TAG, "Login retry : " + tried);
                 Timber.i("Login retry : %s", tried);
             }
         }
         return null;
+    }
+
+    private boolean isNetworkAvailable(Context context) {
+        NetworkInfo activeNetworkInfo = ((ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE)).getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
     private com.dragons.aurora.playstoreapiv2.PlayStoreApiBuilder getBuilder(LoginInfo loginInfo) {

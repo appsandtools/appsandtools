@@ -108,6 +108,12 @@ public class LoginActivity extends BaseActivity {
             ((ImageView) v).setImageResource(passwordVisible ? R.drawable.ic_visibility_on : R.drawable.ic_visibility_off);
             editPassword.setInputType(passwordVisible ? InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD : InputType.TYPE_CLASS_TEXT);
         });*/
+        performLoginAutomatically();
+    }
+
+    private void performLoginAutomatically() {
+        new AppProvidedCredentialsTask(this).logInWithPredefinedAccount();
+        watchLoggedIn();
     }
 
     private void watchLoggedIn() {

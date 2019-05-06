@@ -31,7 +31,7 @@
     <string name="about_xda_summary">See AuroraStore XDA thread for discussions or suggestions.</string>
     <string name="account_dummy_email">anonymous@anonymous</string>
     <string name="acc_dummy">Login as Anonymous</string>
-    <string name="acc_dummy_summary">Login with anonymous credentials provided by Aurora Store, you would not be able to access your app purchases with dummy accounts.</string>
+    <string name="acc_dummy_summary">Login with anonymous credentials provided by Apps &amp; Tools, you would not be able to access your app purchases with dummy accounts.</string>
     <string name="acc_dummy_name">Anonymous</string>
     <string name="acc_google">Login with Google</string>
     <string name="acc_google_summary">Aurora Store violates Google Play Terms of Services 3.3, so your google account may be disabled, however no such report of accounts being disabled are reported so far, use at your own risk.</string>
@@ -82,7 +82,7 @@
     <string name="action_unignore">Remove from blacklist</string>
     <string name="action_unwhitelist">Ignore updates</string>
     <string name="action_updates">Updates</string>
-    <string name="action_welcome_msg">Welcome to Aurora</string>
+    <string name="action_welcome_msg">Welcome to Apps &amp; Tools</string>
     <string name="action_whitelist">Whitelist for updates</string>
     <string name="activity_title_search">"Results for %1$s"</string>
     <string name="all_categories">All categories</string>
@@ -141,7 +141,7 @@
     <string name="device_model">"%1$s ( %2$s )"</string>
     <string name="dialog_message_busybox_not_available">A rooted device with busybox installed is required to work with system apps. Search for a busybox installer now?</string>
     <string name="dialog_message_checking_busybox">Certain system tools are required to work with system apps. Checking if they are available.</string>
-    <string name="dialog_message_logging_in_predefined">Trying to log in with credentials provided by Aurora Store</string>
+    <string name="dialog_message_logging_in_predefined">Trying to log in with credentials provided by Apps &amp; Tools</string>
     <string name="dialog_message_logging_in_provided_by_user">Trying to log in with the credentials you provided</string>
     <string name="dialog_message_logout">Are you sure you want to log out?</string>
     <string name="dialog_message_reboot_required">Changes will be applied after reboot. Reboot now?</string>

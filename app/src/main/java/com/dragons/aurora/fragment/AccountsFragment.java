@@ -116,8 +116,11 @@ public class AccountsFragment extends BaseFragment {
             drawGoogle();
         else if (Accountant.isLoggedIn(getContext()) && Accountant.isDummy(getContext()))
             drawDummy();
-        else
-            askLogin();
+        else{
+//            askLogin();
+//            Not asking to log in. Performing log in automatically with anonymous credentials.
+            getContext().startActivity(new Intent(getContext(), LoginActivity.class));
+        }
 
         chipTOS.setChipStrokeWidth(2);
         chipAdd.setChipStrokeWidth(2);
@@ -135,7 +138,7 @@ public class AccountsFragment extends BaseFragment {
         if (isSecAvailable)
             drawEmptyGoogle();
         else
-            show(view, R.id.chip_add);
+            hide(view, R.id.chip_add);
 
         drawDummyButtons();
     }
@@ -178,7 +181,7 @@ public class AccountsFragment extends BaseFragment {
         remove_google.setOnClickListener(click -> {
             new UserProvidedCredentialsTask(getContext()).removeGooglePrefs();
             hide(view, R.id.googleCard);
-            show(view, R.id.chip_add);
+            hide(view, R.id.chip_add);
         });
     }
 

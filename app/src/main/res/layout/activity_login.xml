@@ -55,7 +55,8 @@
                 android:layout_centerHorizontal="true"
                 android:text="@string/action_select"
                 android:textAppearance="@style/TextAppearance.Aurora.SubTitle"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:visibility="gone"/>
 
         </RelativeLayout>
     </com.google.android.material.appbar.AppBarLayout>
@@ -63,7 +64,8 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:visibility="gone">
 
         <RelativeLayout
             android:layout_width="match_parent"

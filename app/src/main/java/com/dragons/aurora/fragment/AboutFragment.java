@@ -55,14 +55,14 @@ public class AboutFragment extends BaseFragment {
         super.onCreate(savedInstanceState);
         view = inflater.inflate(R.layout.fragment_about, container, false);
         drawVersion();
-        drawLinks();
+        //drawLinks();
         return view;
     }
 
     private void drawVersion() {
         try {
             PackageInfo packageInfo = getActivity().getPackageManager().getPackageInfo(getActivity().getPackageName(), 0);
-            ((TextView) view.findViewById(R.id.app_version)).setText(packageInfo.versionName + "." + packageInfo.versionCode);
+            ((TextView) view.findViewById(R.id.app_version)).setText("(Based on AuroraStore " + packageInfo.versionName + "." + packageInfo.versionCode + ")");
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
         }
