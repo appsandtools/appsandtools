@@ -30,9 +30,12 @@
     <string name="about_xda">Dev Thread</string>
     <string name="about_xda_summary">See AuroraStore XDA thread for discussions or suggestions.</string>
     <string name="account_dummy_email">anonymous@anonymous</string>
-    <string name="acc_dummy">Login as Anonymous</string>
-    <string name="acc_dummy_summary">Login with anonymous credentials provided by Apps &amp; Tools, you would not be able to access your app purchases with dummy accounts.</string>
-    <string name="acc_dummy_name">Anonymous</string>
+    <string name="acc_dummy">Login as Default</string>
+    <string name="acc_dummy_summary">Login with default credentials.</string>
+    <string name="acc_dummy_name">Default</string>
+    <string name="acc_dummy_2">Login as Default</string>
+    <string name="acc_dummy_2_summary">Login with default credentials.</string>
+    <string name="acc_dummy_2_name">Default</string>
     <string name="acc_google">Login with Google</string>
     <string name="acc_google_summary">Aurora Store violates Google Play Terms of Services 3.3, so your google account may be disabled, however no such report of accounts being disabled are reported so far, use at your own risk.</string>
     <string name="acc_google_tos">Read Google\'s Terms"</string>
@@ -42,6 +45,7 @@
     <string name="action_acc_add">Add Google Account</string>
     <string name="action_acc_switch">Tap to switch</string>
     <string name="action_acc_txt">Aurora Accounts</string>
+    <string name="action_acc_2_txt">Accounts</string>
     <string name="action_categories">Categories</string>
     <string name="action_filter">Filters</string>
     <string name="action_filter_all">All</string>
@@ -78,6 +82,7 @@
     <string name="action_settings">Settings</string>
     <string name="action_spoofed">Spoof</string>
     <string name="action_switch_dummy">Switch Dummy</string>
+    <string name="action_switch_dummy_2">Switch Account</string>
     <string name="action_switch_google">Switch Google</string>
     <string name="action_unignore">Remove from blacklist</string>
     <string name="action_unwhitelist">Ignore updates</string>

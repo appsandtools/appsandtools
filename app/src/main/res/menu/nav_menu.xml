@@ -32,8 +32,8 @@
             android:id="@+id/action_settings"
             android:icon="@drawable/ic_settings"
             android:title="@string/action_settings" />
-        <item
-            android:id="@+id/action_spoof"
-            android:icon="@drawable/ic_incognito"
-            android:title="@string/action_spoofed" />
+        <!--<item-->
+            <!--android:id="@+id/action_spoof"-->
+            <!--android:icon="@drawable/ic_incognito"-->
+            <!--android:title="@string/action_spoofed" />-->
 </menu>

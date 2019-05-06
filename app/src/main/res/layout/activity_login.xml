@@ -211,7 +211,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignBottom="@+id/anonymous_holder"
                         android:layout_toEndOf="@+id/anonymous_holder"
-                        android:text="@string/acc_dummy"
+                        android:text="@string/acc_dummy_2"
                         android:textAppearance="@style/TextAppearance.Aurora.Title"
                         android:textSize="20sp" />
 
@@ -224,7 +224,7 @@
                         android:padding="5dp"
                         android:paddingStart="10dp"
                         android:paddingEnd="10dp"
-                        android:text="@string/acc_dummy_summary"
+                        android:text="@string/acc_dummy_2_summary"
                         android:textAlignment="viewStart"
                         android:textSize="14sp" />
 

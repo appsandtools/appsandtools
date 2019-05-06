@@ -29,13 +29,13 @@
             android:title="@string/action_about">
             <intent android:action=".activities.AboutActivity" />
         </Preference>
-        <Preference
-            android:layout="@layout/item_preference"
-            android:icon="@drawable/ic_incognito_alt"
-            android:key="PREFERENCE_SPOOF"
-            android:title="@string/action_spoofed">
-            <intent android:action=".activities.SpoofActivity" />
-        </Preference>
+        <!--<Preference-->
+            <!--android:layout="@layout/item_preference"-->
+            <!--android:icon="@drawable/ic_incognito_alt"-->
+            <!--android:key="PREFERENCE_SPOOF"-->
+            <!--android:title="@string/action_spoofed">-->
+            <!--<intent android:action=".activities.SpoofActivity" />-->
+        <!--</Preference>-->
         <EditTextPreference
             android:layout="@layout/item_preference"
             android:defaultValue="Download"
@@ -50,7 +50,7 @@
         android:title="@string/pref_category_ui">
         <ListPreference
             android:layout="@layout/item_preference"
-            android:defaultValue="Light"
+            android:defaultValue="Dark"
             android:entries="@array/THEMES_LABELS"
             android:entryValues="@array/THEMES_VALUES"
             android:icon="@drawable/ic_theme"
@@ -133,7 +133,6 @@
         <CheckBoxPreference
             android:layout="@layout/item_preference"
             android:defaultValue="true"
-            android:dependency="PREFERENCE_BACKGROUND_UPDATE_DOWNLOAD"
             android:icon="@drawable/ic_wifi"
             android:key="PREFERENCE_BACKGROUND_UPDATE_WIFI_ONLY"
             android:title="@string/pref_background_update_wifi_only" />

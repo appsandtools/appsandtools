@@ -40,7 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="@string/action_acc_txt"
+                android:text="@string/action_acc_2_txt"
                 android:textAppearance="@style/TextAppearance.Aurora.Title"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
@@ -132,7 +132,7 @@
                             android:paddingStart="10dp"
                             android:paddingEnd="10dp"
                             android:paddingBottom="10dp"
-                            android:text="@string/acc_dummy_summary" />
+                            android:text="@string/acc_dummy_2_summary" />
 
                     </RelativeLayout>
 
@@ -157,7 +157,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_toStartOf="@id/btn_logout"
-                            android:text="@string/action_switch_dummy"
+                            android:text="@string/action_switch_dummy_2"
                             android:textColor="?colorAccent"
                             android:visibility="gone" />
 
