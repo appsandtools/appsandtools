@@ -111,6 +111,7 @@
                             android:layout_toEndOf="@id/avatar_dummy"
                             android:paddingStart="5dp"
                             android:paddingEnd="5dp"
+                            android:visibility="gone"
                             android:textAppearance="@style/TextAppearance.Aurora.SubTitle" />
 
                         <TextView

@@ -70,10 +70,20 @@
                     android:textSize="14sp" />
 
                 <TextView
+                    android:id="@+id/aurorastore_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/app_version"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/google_sans"
+                    android:gravity="center"
+                    android:textSize="14sp" />
+
+                <TextView
                     android:id="@+id/about_app"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_below="@+id/app_version"
+                    android:layout_below="@+id/aurorastore_version"
                     android:fontFamily="@font/google_sans"
                     android:gravity="center"
                     android:padding="10dp"

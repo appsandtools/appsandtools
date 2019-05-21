@@ -62,7 +62,8 @@ public class AboutFragment extends BaseFragment {
     private void drawVersion() {
         try {
             PackageInfo packageInfo = getActivity().getPackageManager().getPackageInfo(getActivity().getPackageName(), 0);
-            ((TextView) view.findViewById(R.id.app_version)).setText("(Based on AuroraStore " + packageInfo.versionName + "." + packageInfo.versionCode + ")");
+            ((TextView) view.findViewById(R.id.app_version)).setText("Version " + packageInfo.versionName);
+            ((TextView) view.findViewById(R.id.aurorastore_version)).setText("(Based on AuroraStore 2.0.5-β.21002005)");
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
         }

@@ -22,9 +22,9 @@
 apply plugin: 'com.android.application'
 
 ext.minimumSdkVersion = 21
-ext.versionMajor = 2
-ext.versionMinor = 0
-ext.versionPatch = 5
+ext.versionMajor = 2.1
+ext.versionMinor = 0.0
+ext.versionPatch = 0001
 ext.versionClassifier = null
 ext.isSnapshot = false
 ext.isBeta = true
@@ -106,17 +106,6 @@ private Integer generateVersionCode() {
 
 private String generateVersionName() {
     String versionName = "${ext.versionMajor}.${ext.versionMinor}.${ext.versionPatch}"
-    if (ext.versionClassifier == null) {
-        if (ext.isSnapshot)
-            ext.versionClassifier = "SNAPSHOT"
-        else if (ext.isBeta)
-            ext.versionClassifier = "β"
-        else
-            ext.versionClassifier = "α"
-    }
 
-    if (ext.versionClassifier != null) {
-        versionName += "-" + ext.versionClassifier
-    }
     return versionName;
 }
