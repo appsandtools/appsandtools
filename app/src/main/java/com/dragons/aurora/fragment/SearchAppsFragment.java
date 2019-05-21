@@ -32,17 +32,17 @@ import android.widget.TextView;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.bumptech.glide.Glide;
-import com.dragons.aurora.AppListIterator;
 import com.dragons.aurora.CredentialsEmptyException;
 import com.dragons.aurora.EndlessRecyclerViewScrollListener;
 import com.dragons.aurora.PlayStoreApiAuthenticator;
 import com.dragons.aurora.R;
 import com.dragons.aurora.adapters.EndlessAppsAdapter;
+import com.dragons.aurora.api.CustomAppListIterator;
+import com.dragons.aurora.api.SearchIteratorV2;
 import com.dragons.aurora.dialogs.FilterDialog;
 import com.dragons.aurora.helpers.Accountant;
 import com.dragons.aurora.model.App;
-import com.dragons.aurora.playstoreapiv2.SearchIterator;
-import com.dragons.aurora.task.playstore.SearchTask;
+import com.dragons.aurora.task.playstore.SearchTaskV2;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.List;
@@ -91,10 +91,10 @@ public class SearchAppsFragment extends BaseFragment {
 
     private View view;
     private String query;
-    private AppListIterator iterator;
+    private CustomAppListIterator iterator;
     private CompositeDisposable mDisposable = new CompositeDisposable();
     private EndlessAppsAdapter endlessAppsAdapter;
-    private SearchTask mTask;
+    private SearchTaskV2 searchTask;
 
     public String getQuery() {
         return query;
@@ -112,7 +112,7 @@ public class SearchAppsFragment extends BaseFragment {
         if (arguments != null) {
             setQuery(arguments.getString("SearchQuery"));
             searchTitle.setText(arguments.getString("SearchTitle"));
-            mTask = new SearchTask(getContext());
+            searchTask = new SearchTaskV2(getContext());
             iterator = setupIterator(getQuery());
             fetchSearchAppsList(false);
         } else
@@ -165,10 +165,10 @@ public class SearchAppsFragment extends BaseFragment {
         filterDialog.show(ft, "dialog");
     }
 
-    private AppListIterator setupIterator(String query) {
-        AppListIterator iterator;
+    private CustomAppListIterator setupIterator(String query) {
+        CustomAppListIterator iterator;
         try {
-            iterator = new AppListIterator(new SearchIterator(new PlayStoreApiAuthenticator(getContext()).getApi(), query));
+            iterator = new CustomAppListIterator(new SearchIteratorV2(new PlayStoreApiAuthenticator(getContext()).getApi(), query));
             iterator.setFilter(new FilterMenu(getContext()).getFilterPreferences());
             return iterator;
         } catch (Exception e) {
@@ -215,7 +215,7 @@ public class SearchAppsFragment extends BaseFragment {
     }
 
     private void fetchSearchAppsList(boolean shouldIterate) {
-        mDisposable.add(Observable.fromCallable(() -> mTask.getResult(iterator))
+        mDisposable.add(Observable.fromCallable(() -> searchTask.getSearchResults(iterator))
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .doOnError(err -> ohhSnap.setVisibility(View.VISIBLE))

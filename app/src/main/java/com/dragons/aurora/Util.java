@@ -26,6 +26,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.res.TypedArray;
 import android.graphics.drawable.GradientDrawable;
@@ -369,5 +370,14 @@ public class Util {
         } catch (SecurityException e) {
             return false;
         }
+    }
+
+    public static boolean filterGoogleAppsEnabled(Context context) {
+        return getPrefs(context).getBoolean("PREFERENCE_FILTER_GOOGLE", false);
+    }
+
+    public static SharedPreferences getPrefs(Context context) {
+        return context.getSharedPreferences(
+                "com.aurora.store", Context.MODE_PRIVATE);
     }
 }
