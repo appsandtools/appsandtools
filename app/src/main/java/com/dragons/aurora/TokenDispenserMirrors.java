@@ -24,6 +24,8 @@ package com.dragons.aurora;
 public class TokenDispenserMirrors {
 
     static private String[] mirrors = new String[]{
+            "https://scopiasmars.avaya.com/token-dispenser",
+            "https://token-dispenser-mirror.herokuapp.com",
             "https://token-dispenser.herokuapp.com",
             "http://route-token-dispenser.193b.starter-ca-central-1.openshiftapps.com",
             "http://token-dispenser.duckdns.org:8080"
